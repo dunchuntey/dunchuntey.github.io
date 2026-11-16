@@ -1,6 +1,6 @@
 # Site settings. Edit the title and description to taste.
-title: smoking chimps and dancing bears
-description: Stuff
+title: dunchuntey
+description: Skeletons, inversions and other musical experiments.
 url: https://dunchuntey.github.io
 baseurl: ""
 
@@ -14,6 +14,7 @@ plugins:
 header_pages:
   - about.md
   - skeletons.html
+  - music.html
 
 exclude:
   - README.md
