@@ -1,0 +1,73 @@
+---
+layout: page
+title: Skeletons
+permalink: /skeletons/
+---
+<style>
+  #skeletons-app .sk-row { margin: 0.4rem 0; }
+  #skeletons-app label { display: inline-block; min-width: 6rem; }
+  #skeletons-app pre { overflow-x: auto; font-size: 0.8rem; line-height: 1.25; padding: 0.75rem; }
+  #skeletons-app button { margin: 0 0.3rem 0.3rem 0; cursor: pointer; }
+  #skeletons-app button.sk-on { font-weight: bold; text-decoration: underline; }
+  #skeletons-app .sk-error { color: #b00020; }
+  #skeletons-app .sk-hint { color: #777; font-size: 0.85rem; }
+</style>
+
+<div id="skeletons-app" data-py="{{ '/assets/py/' | relative_url }}">
+  <p id="sk-status">Loading...</p>
+  <noscript><p>This tool needs JavaScript.</p></noscript>
+
+  <div id="sk-controls" hidden>
+    <div class="sk-row">
+      <label for="sk-kind">Kind</label>
+      <select id="sk-kind"></select>
+    </div>
+    <p id="sk-description" class="sk-hint"></p>
+
+    <div class="sk-row" id="sk-row-fret">
+      <label for="sk-fret">Start fret</label>
+      <select id="sk-fret"></select>
+    </div>
+    <div class="sk-row" id="sk-row-grouping">
+      <label for="sk-grouping">String grouping</label>
+      <select id="sk-grouping"></select>
+    </div>
+    <div class="sk-row" id="sk-row-length">
+      <label for="sk-length">Length</label>
+      <input id="sk-length" type="text" size="4" placeholder="random">
+      <span id="sk-length-hint" class="sk-hint"></span>
+    </div>
+    <div class="sk-row" id="sk-row-string">
+      <label for="sk-string">Start string</label>
+      <select id="sk-string"></select>
+    </div>
+    <div class="sk-row" id="sk-row-interval">
+      <label for="sk-interval">Largest step</label>
+      <input id="sk-interval" type="text" size="4" placeholder="4">
+      <span class="sk-hint">(semitones, 1 to 12)</span>
+    </div>
+    <div class="sk-row">
+      <label for="sk-shflat">Note names</label>
+      <select id="sk-shflat"></select>
+    </div>
+    <p><button id="sk-generate" type="button">Generate</button></p>
+  </div>
+
+  <p id="sk-message" class="sk-error" hidden></p>
+
+  <div id="sk-output" hidden>
+    <pre id="sk-tab"></pre>
+    <p id="sk-modes" hidden></p>
+    <p>
+      <button id="sk-triads-simple" type="button">Triads: simple (adjacent strings)</button>
+      <button id="sk-triads-full" type="button">Triads: full (any strings)</button>
+      <button id="sk-compare" type="button">Compare with the other kinds</button>
+    </p>
+    <div id="sk-triad-list"></div>
+    <pre id="sk-triad-text"></pre>
+    <pre id="sk-extra" hidden></pre>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="{{ '/assets/skeletons.js' | relative_url }}"></script>
