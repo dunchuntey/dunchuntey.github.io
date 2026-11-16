@@ -2,10 +2,9 @@
 
 ---
 
-// Colours for the whole site. Change the hex codes, save, push.
-$background-color: #00665A;
-// For a dark background, also set the text and link colours so they stay readable:
-$text-color: #AAF0BE;
-// $brand-color: #93ff7d;
+//Colours for the whole site. Change the hex codes, save, push.
+{$background-color: #00665A;
+$text-color: #AAF0BE;}
+// $brand-color: #1F322E;
 
 @import "minima";
