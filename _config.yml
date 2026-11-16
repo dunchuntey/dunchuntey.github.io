@@ -1,0 +1,19 @@
+# Site settings. Edit the title and description to taste.
+title: dunchuntey
+description: Skeletons, inversions and other musical experiments.
+url: https://dunchuntey.github.io
+baseurl: ""
+
+# GitHub Pages builds this with its own Jekyll, so no local install is needed.
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# The pages listed in the header, in this order.
+header_pages:
+  - about.md
+  - skeletons.md
+
+exclude:
+  - README.md
