@@ -189,12 +189,15 @@
     });
   }
 
+  
   function showTriads(adjacent) {
     var triads = call("triads", {
       state: current.state,
       mode: current.mode,
       adjacent: adjacent,
     });
+    $("sk-extra").textContent = "";
+    $("sk-extra").hidden = true;
     var list = $("sk-triad-list");
     clear(list);
     $("sk-triad-text").textContent = "";
