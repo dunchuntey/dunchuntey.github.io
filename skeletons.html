@@ -16,7 +16,8 @@ permalink: /skeletons/
   #skeletons-app button.sk-on { font-weight: bold; text-decoration: underline; }
   #skeletons-app .sk-error { color: #FF9E9E; }
   #skeletons-app .sk-hint { color: #7CC9A0; font-size: 0.85rem; }
-  #skeletons-app pre:empty { display: none; }
+  #skeletons-app pre:empty { display: none !important; }
+  #skeletons-app [hidden] { display: none !important; }
 </style>
 
 <div id="skeletons-app" data-py="{{ '/assets/py/' | relative_url }}">
