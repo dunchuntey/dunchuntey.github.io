@@ -51,11 +51,15 @@ LENGTH_HINTS = {
 
 
 def _capture(function):
-    """What the function prints, as text."""
+    """What the function prints, as text, without lines made only of '='."""
     buffer = io.StringIO()
     with contextlib.redirect_stdout(buffer):
         function()
-    return buffer.getvalue().strip("\n")
+    lines = [
+        line for line in buffer.getvalue().split("\n")
+        if not (line.strip() and set(line.strip()) == {"="})
+    ]
+    return "\n".join(lines).strip("\n")
 
 
 def _blank(value):

@@ -214,6 +214,8 @@
 
   function showCompare() {
     var result = call("compare", { state: current.state, mode: current.mode });
+    clear($("sk-triad-list"));
+    $("sk-triad-text").textContent = "";
     $("sk-extra").textContent = result.text;
     $("sk-extra").hidden = false;
   }
