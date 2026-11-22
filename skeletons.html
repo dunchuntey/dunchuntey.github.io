@@ -4,8 +4,13 @@ title: skeletons
 permalink: /skeletons/
 ---
 <style>
-  #skeletons-app .sk-row { margin: 0.4rem 0; }
-  #skeletons-app label { display: inline-block; min-width: 6rem; }
+  #skeletons-app .sk-row { margin: 0.5rem 0; }
+  #skeletons-app label { display: inline-block; width: 9rem; }
+  #skeletons-app .sk-row select,
+  #skeletons-app .sk-row input[type="text"] {
+    width: 8rem;
+    box-sizing: border-box;
+  }
   #skeletons-app pre { overflow-x: auto; font-size: 0.8rem; line-height: 1.25; padding: 0.75rem; }
   #skeletons-app button { margin: 0 0.3rem 0.3rem 0; cursor: pointer; }
   #skeletons-app button.sk-on { font-weight: bold; text-decoration: underline; }
@@ -59,9 +64,9 @@ permalink: /skeletons/
     <pre id="sk-tab"></pre>
     <p id="sk-modes" hidden></p>
     <p>
-      <button id="sk-triads-simple" type="button">Triads: simple (adjacent strings)</button>
-      <button id="sk-triads-full" type="button">Triads: full (any strings)</button>
-      <button id="sk-compare" type="button">Compare with the other kinds</button>
+      <button id="sk-triads-simple" type="button">Triads (adjacent strings)</button>
+      <button id="sk-triads-full" type="button">Triads (any strings)</button>
+      <button id="sk-compare" type="button">Compare with others</button>
     </p>
     <div id="sk-triad-list"></div>
     <pre id="sk-triad-text"></pre>
