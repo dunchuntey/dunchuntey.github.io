@@ -1,9 +1,39 @@
 ---
 ---
 
-//Colours for the whole site. Change the hex codes, save, push.
+// Brand colours for the whole site. Change the hex codes, save, push.
 $background-color: #00665A;
 $text-color: #AAF0BE;
-// $brand-color: #1F322E;
+$brand-color: #FFE9A6;          // links
+$grey-color: #7CC9A0;           // muted text (dates, footer)
+$grey-color-light: #2E8B7C;     // borders
+$grey-color-dark: #D6FBE2;      // site title, headings in the footer
 
 @import "minima";
+
+// Keep native controls and scrollbars dark.
+html { color-scheme: dark; }
+
+// Links: visited links must not darken on a dark background.
+a { text-decoration: underline; }
+a:visited { color: $brand-color; }
+a:hover { color: $text-color; }
+
+// Code and tab output blocks (the skeleton results).
+pre, code {
+  background-color: #004A41;
+  color: $text-color;
+  border-color: $grey-color-light;
+}
+pre > code { background-color: transparent; }
+
+// Buttons, selects and text boxes on the Skeletons page.
+select, input[type="text"], button {
+  background-color: #004A41;
+  color: $text-color;
+  border: 1px solid $grey-color;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+button:hover, select:hover { border-color: $text-color; }
