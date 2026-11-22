@@ -21,7 +21,7 @@ a:hover { color: $text-color; }
 
 // Code and tab output blocks (the skeleton results).
 pre, code {
-  background-color: #AAF0BE;
+  background-color: #00665A;
   color: $text-color;
   border-color: $grey-color-light;
 }
@@ -29,8 +29,8 @@ pre > code { background-color: transparent; }
 
 // Buttons, selects and text boxes on the Skeletons page.
 select, input[type="text"], button {
-  background-color: #00665A;
-  color: $text-color;
+  background-color: #AAF0BE;
+  color: #00665A;
   border: 1px solid $grey-color;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
