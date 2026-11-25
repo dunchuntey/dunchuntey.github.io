@@ -29,8 +29,8 @@ pre > code { background-color: transparent; }
 
 // Buttons, selects and text boxes on the Skeletons page.
 select, input[type="text"], button {
-  background-color: #AAF0BE;
-  color: #00665A;
+  background-color: $text-color;
+  color: $background-color;
   border: 1px solid $grey-color;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
