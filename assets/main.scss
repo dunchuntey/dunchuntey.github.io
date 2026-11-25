@@ -1,18 +1,16 @@
 ---
 ---
 
-$background-color: #7CC9A0;            // background
+$background-color: #7fe89d;            // background
 $brand-color: #AAF0BE;               // brand
 $brand-monochromatic: #7fe89d;       // brand dark
 $brand-analogous-1: #aaf0e1;         // brand light
 $brand-analogous-2: #b9f0aa;         // brand muted
+$link-color: #f0aadc;                // brand tetradic 2 (links)
 $visited-link-color: #beaaf0;        // brand triadic 1
 $highlight-color: #f0beaa;           // brand triadic 2
 $brand-tetradic-1: #aab9f0;          // brand tetradic 1
-$link-color: #f0aadc;                // brand tetradic 2 (links)
 $brand-tetradic-3: #f0e1aa;          // brand tetradic 3
-$grey-color: #7CC9A0;                // muted text (dates, footer)
-$visited-link-color: #beaaf0;        // visited links must not darken on a dark background
 
 @import "minima";
 
@@ -28,7 +26,7 @@ a:hover { color: $highlight-color; }
 pre, code {
   background-color: $brand-color;
   color: $background-color;
-  border-color: $grey-color-light;
+  border-color: $brand-analogous-2;
 }
 pre > code { background-color: transparent; }
 
@@ -36,7 +34,7 @@ pre > code { background-color: transparent; }
 select, input[type="text"], button {
   background-color: $brand-color;
   color: $background-color;
-  border: 1px solid $grey-color;
+  border: 1px solid $brand-analogous-2;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
   font: inherit;
