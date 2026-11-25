@@ -11,12 +11,15 @@ permalink: /music/
     align-items: start;
   }
   .music-release h2 { font-size: 1.1rem; margin: 0 0 0.4rem 0; }
-  /* !important because Bandcamp's embed code sets its own width inline */
+  /* !important because Bandcamp's embed code sets its own width and border inline */
+  .music-grid iframe,
   .music-release iframe {
     display: block;
+    box-sizing: border-box;
     width: 100% !important;
     max-width: 100%;
-    border: 10px solid #00665a;
+    border: 2px solid #b9f0aa !important;
+    border-radius: 6px;
   }
 </style>
 
