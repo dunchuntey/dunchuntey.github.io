@@ -1,14 +1,18 @@
 ---
 ---
 
-// Brand colours for the whole site. Change the hex codes, save, push.
-$background-color: #00665A;
-$text-color: #AAF0BE;
-$link-color: #f0beaa;          // links
-$grey-color: #7CC9A0;           // muted text (dates, footer)
-$grey-color-light: #2E8B7C;     // borders
-$grey-color-dark: #AAF0BE;      // site title, headings in the footer
-$highlight-color: #f0aadc;         // highlighting
+$background-color: #7CC9A0;            // background
+$brand-color: #AAF0BE;               // brand
+$brand-monochromatic: #7fe89d;       // brand dark
+$brand-analogous-1: #aaf0e1;         // brand light
+$brand-analogous-2: #b9f0aa;         // brand muted
+$visited-link-color: #beaaf0;        // brand triadic 1
+$highlight-color: #f0beaa;           // brand triadic 2
+$brand-tetradic-1: #aab9f0;          // brand tetradic 1
+$link-color: #f0aadc;                // brand tetradic 2 (links)
+$brand-tetradic-3: #f0e1aa;          // brand tetradic 3
+$grey-color: #7CC9A0;                // muted text (dates, footer)
+$visited-link-color: #beaaf0;        // visited links must not darken on a dark background
 
 @import "minima";
 
@@ -16,13 +20,13 @@ $highlight-color: #f0aadc;         // highlighting
 html { color-scheme: dark; }
 
 // Links: visited links must not darken on a dark background.
-a { text-decoration: none; }
-a:visited { color: $link-color; }
-a:hover { color: $text-color; }
+a:link { color: $link-color; text-decoration: none; }
+a:visited { color: $visited-link-color; }
+a:hover { color: $highlight-color; }
 
 // Code and tab output blocks (the skeleton results).
 pre, code {
-  background-color: $text-color;
+  background-color: $brand-color;
   color: $background-color;
   border-color: $grey-color-light;
 }
@@ -30,11 +34,11 @@ pre > code { background-color: transparent; }
 
 // Buttons, selects and text boxes on the Skeletons page.
 select, input[type="text"], button {
-  background-color: $text-color;
+  background-color: $brand-color;
   color: $background-color;
   border: 1px solid $grey-color;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
   font: inherit;
 }
-button:hover, select:hover { border-color: $text-color; }
+button:hover, select:hover { border-color: $brand-color; }
