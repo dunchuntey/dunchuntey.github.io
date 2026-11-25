@@ -1,42 +1,50 @@
 ---
 ---
 
-$background-color: #7fe89d;            // background
-$brand-color: #AAF0BE;               // brand
-$brand-monochromatic: #7fe89d;       // brand dark
-$brand-analogous-1: #aaf0e1;         // brand light
-$brand-analogous-2: #b9f0aa;         // brand muted
-$link-color: #f0aadc;                // brand tetradic 2 (links)
-$visited-link-color: #beaaf0;        // brand triadic 1
-$highlight-color: #f0beaa;           // brand triadic 2
-$brand-tetradic-1: #aab9f0;          // brand tetradic 1
-$brand-tetradic-3: #f0e1aa;          // brand tetradic 3
+// Your palette, kept under your own names.
+$brand-analogous-1: #aaf0e1;       // brand light
+$brand-analogous-2: #b9f0aa;     // brand muted
+$link-color: #f0aadc;            // tetradic 2
+$visited-link-color: #beaaf0;    // triadic 1
+$highlight-color: #f0beaa;       // triadic 2
+$brand-tetradic-1: #aab9f0;      // tetradic 1
+$brand-tetradic-3: #f0e1aa;      // tetradic 3
+$hero-color: #AAF0BE;
+$hero-dark: #157731;             // brand dark
+
+// The variables minima actually reads.
+$background-color: $hero-dark;            // page background
+$text-color: $hero-color;                 // main text
+$brand-color: $link-color;                // minima uses this for links
+$grey-color: $brand-monochromatic;        // muted text (dates, footer)
+$grey-color-light: $brand-analogous-2;    // lines under the header, above the footer, table and code borders
+$grey-color-dark: $brand-analogous-1;     // site title and headings in the header and footer
 
 @import "minima";
 
 // Keep native controls and scrollbars dark.
 html { color-scheme: dark; }
 
-// Links: visited links must not darken on a dark background.
-a:link { text-decoration: none; }
+// Links. Minima darkens visited links, which is unreadable on a dark page.
+a:link { color: $link-color; text-decoration: none; }
 a:visited { color: $visited-link-color; }
-a:hover { color: $highlight-color; }
+a:hover { color: $highlight-color; text-decoration: underline; }
 
 // Code and tab output blocks (the skeleton results).
 pre, code {
-  background-color: $brand-color;
-  color: $background-color;
-  border-color: $brand-analogous-2;
+  background-color: #004A41;
+  color: $text-color;
+  border-color: $grey-color-light;
 }
 pre > code { background-color: transparent; }
 
 // Buttons, selects and text boxes on the Skeletons page.
 select, input[type="text"], button {
-  background-color: $brand-color;
+  background-color: $hero-color;
   color: $background-color;
-  border: 1px solid $brand-analogous-2;
+  border: 1px solid $grey-color;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
   font: inherit;
 }
-button:hover, select:hover { border-color: $brand-color; }
+button:hover, select:hover { border-color: $text-color; }
