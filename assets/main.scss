@@ -2,7 +2,8 @@
 ---
 
 // Your palette, kept under your own names.
-$brand-analogous-1: #aaf0e1;       // brand light
+$brand-monochromatic: #7fe89d;     // brand dark
+$brand-analogous-1: #aaf0e1;     // brand light
 $brand-analogous-2: #b9f0aa;     // brand muted
 $link-color: #f0aadc;            // tetradic 2
 $visited-link-color: #beaaf0;    // triadic 1
@@ -10,7 +11,7 @@ $highlight-color: #f0beaa;       // triadic 2
 $brand-tetradic-1: #aab9f0;      // tetradic 1
 $brand-tetradic-3: #f0e1aa;      // tetradic 3
 $hero-color: #AAF0BE;
-$hero-dark: #157731;             // brand dark
+$hero-dark: #157731;             // brand darker
 
 // The variables minima actually reads.
 $background-color: $hero-dark;            // page background
