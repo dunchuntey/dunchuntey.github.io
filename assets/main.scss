@@ -4,10 +4,11 @@
 // Brand colours for the whole site. Change the hex codes, save, push.
 $background-color: #00665A;
 $text-color: #AAF0BE;
-$brand-color: #f0aadc;          // links
+$link-color: #f0beaa;          // links
 $grey-color: #7CC9A0;           // muted text (dates, footer)
 $grey-color-light: #2E8B7C;     // borders
 $grey-color-dark: #AAF0BE;      // site title, headings in the footer
+$highlight-color: #f0aadc;         // highlighting
 
 @import "minima";
 
@@ -16,7 +17,7 @@ html { color-scheme: dark; }
 
 // Links: visited links must not darken on a dark background.
 a { text-decoration: none; }
-a:visited { color: $brand-color; }
+a:visited { color: $link-color; }
 a:hover { color: $text-color; }
 
 // Code and tab output blocks (the skeleton results).
