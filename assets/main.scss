@@ -16,7 +16,7 @@ $hero-dark: #157731;             // brand darker
 // The variables minima actually reads.
 $background-color: #00665A;             // page background
 $text-color: $hero-color;                 // main text
-$brand-color: $link-color;                // minima uses this for links
+$brand-color: $hero-color;                // minima uses this for links
 $grey-color: $brand-monochromatic;        // muted text (dates, footer)
 $grey-color-light: $brand-analogous-2;    // lines under the header, above the footer, table and code borders
 $grey-color-dark: $hero-color;     // site title and headings in the header and footer
