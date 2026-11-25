@@ -25,10 +25,10 @@
 
 // The variables minima actually reads.
 $background-color: #00665A;             // page background
-$text-color: #aaf0be;                 // main text
+$text-color: #b9f0aa;                 // main text
 $brand-color: #aaf0be;                // minima uses this for links (and main title)
-$grey-color: #7fe89d;                 // muted text (dates, footer)
-$grey-color-light: #b9f0aa;           // lines under the header, above the footer, table and code borders
+$grey-color: #beaaf0;                 // muted text (dates, footer)
+$grey-color-light: #aaf0e1;           // lines under the header, above the footer, table and code borders
 $grey-color-dark: #aaf0be;            // site title and headings in the header and footer
 
 @import "minima";
