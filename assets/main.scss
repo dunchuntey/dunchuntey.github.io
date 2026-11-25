@@ -26,12 +26,12 @@
 // The variables minima actually reads.
 $background-color: #00665A;             // Page background
 $text-color: #b9f0aa;                 // Main body text, and the header navigation links.
-$brand-color: #aaf0be;                // Link colour. Also the base for visited links, which
+$brand-color: #b9f0aa;                // Link colour. Also the base for visited links, which
 //                                         minima darkens by 15%.
 $grey-color: #b9f0aa;                 // Muted text: post dates, quote text, small print.
 $grey-color-light: #beaaf0;           // Thin lines and borders: under the header, above the
 //                                         footer, beside quotes, round code blocks and tables.
-$grey-color-dark: #aaf0be;            // The site title, footer headings, and the thick bar at
+$grey-color-dark: #b9f0aa;            // The site title, footer headings, and the thick bar at
 //                                         the very top of the page.
 
 @import "minima";
@@ -47,18 +47,18 @@ a:hover { color: #beaaf0; text-decoration: underline; }
 // Code and tab output blocks (the skeleton results).
 pre, code {
   background-color: #004A41;
-  color: #aaf0be;
+  color: #b9f0aa;
   border-color: #b9f0aa;
 }
 pre > code { background-color: transparent; }
 
 // Buttons, selects and text boxes on the Skeletons page.
 select, input[type="text"], button {
-  background-color: #aaf0be;
+  background-color: #b9f0aa;
   color: #00665A;
   border: 1px solid #7fe89d;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
   font: inherit;
 }
-button:hover, select:hover { border-color: #aaf0be; }
+button:hover, select:hover { border-color: #b9f0aa; }

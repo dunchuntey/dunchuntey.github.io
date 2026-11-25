@@ -126,7 +126,14 @@ def generate(request):
     try:
         skeleton, grouping, start_fret = sk.generate_skeleton(args, kind)
     except SystemExit as error:
-        return json.dumps({"error": str(error)})
+        import re
+        names = {"g": "string grouping", "l": "length", "f": "start fret", "i": "largest step"}
+        text = re.sub(
+            r"(?<![\w-])-([glfi])(?![\w-])",
+            lambda match: names[match.group(1)],
+            str(error),
+        )
+        return json.dumps({"error": text})
     state = {
         "kind": kind, "skeleton": skeleton, "grouping": grouping,
         "start_fret": start_fret, "shflat": args.shflat,
