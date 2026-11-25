@@ -5,10 +5,10 @@
 $brand-monochromatic: #7fe89d;     // brand dark
 $brand-analogous-1: #aaf0e1;     // brand light
 $brand-analogous-2: #b9f0aa;     // brand muted
-$link-color: #f0aadc;            // tetradic 2
-$visited-link-color: #beaaf0;    // triadic 1
+$link-color: #beaaf0;            // tetradic 2
+$visited-link-color: #aab9f0;   // triadic 1
 $highlight-color: #f0beaa;       // triadic 2
-$brand-tetradic-1: #aab9f0;      // tetradic 1
+$brand-tetradic-1: #f0aadc;      // tetradic 1
 $brand-tetradic-3: #f0e1aa;      // tetradic 3
 $hero-color: #AAF0BE;
 $hero-dark: #157731;             // brand darker
@@ -16,7 +16,7 @@ $hero-dark: #157731;             // brand darker
 // The variables minima actually reads.
 $background-color: #00665A;             // page background
 $text-color: $hero-color;                 // main text
-$brand-color: $hero-color;                // minima uses this for links
+$brand-color: $hero-color;                // minima uses this for links (and main title)
 $grey-color: $brand-monochromatic;        // muted text (dates, footer)
 $grey-color-light: $brand-analogous-2;    // lines under the header, above the footer, table and code borders
 $grey-color-dark: $hero-color;     // site title and headings in the header and footer
