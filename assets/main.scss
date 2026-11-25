@@ -1,25 +1,35 @@
 ---
 ---
 
-// Your palette, kept under your own names.
-$brand-monochromatic: #7fe89d;     // brand dark
-$brand-analogous-1: #aaf0e1;     // brand light
-$brand-analogous-2: #b9f0aa;     // brand muted
-$link-color: #beaaf0;            // tetradic 2
-$visited-link-color: #aab9f0;   // triadic 1
-$highlight-color: #f0beaa;       // triadic 2
-$brand-tetradic-1: #f0aadc;      // tetradic 1
-$brand-tetradic-3: #f0e1aa;      // tetradic 3
-$hero-color: #AAF0BE;
-$hero-dark: #157731;             // brand darker
+// ---------------------------------------------------------------------------
+// MINIMA COLOUR VARIABLES (what each one controls)
+// Minima reads only these six. Any other variable name does nothing unless one
+// of our own rules below uses it. Set them above "@import minima".
+//
+// $background-color  The page background.
+// $text-color        Main body text, and the header navigation links.
+// $brand-color       Link colour. Also the base for visited links, which
+//                    minima darkens by 15%.
+// $grey-color        Muted text: post dates, quote text, small print.
+// $grey-color-light  Thin lines and borders: under the header, above the
+//                    footer, beside quotes, round code blocks and tables.
+// $grey-color-dark   The site title, footer headings, and the thick bar at
+//                    the very top of the page.
+//
+// NOT controlled by a variable (so we override them with our own rules):
+// - Link hover and visited colours: the a:visited and a:hover rules.
+// - Code and tab block backgrounds: the "pre, code" rule.
+// - Buttons, dropdowns and text boxes: the "select, input, button" rule.
+// ---------------------------------------------------------------------------
+
 
 // The variables minima actually reads.
 $background-color: #00665A;             // page background
-$text-color: $hero-color;                 // main text
-$brand-color: $hero-color;                // minima uses this for links (and main title)
-$grey-color: $brand-monochromatic;        // muted text (dates, footer)
-$grey-color-light: $brand-analogous-2;    // lines under the header, above the footer, table and code borders
-$grey-color-dark: $hero-color;     // site title and headings in the header and footer
+$text-color: #aaf0be;                 // main text
+$brand-color: #aaf0be;                // minima uses this for links (and main title)
+$grey-color: #7fe89d;        // muted text (dates, footer)
+$grey-color-light: #b9f0aa;    // lines under the header, above the footer, table and code borders
+$grey-color-dark: #aaf0be;     // site title and headings in the header and footer
 
 @import "minima";
 
@@ -27,25 +37,25 @@ $grey-color-dark: $hero-color;     // site title and headings in the header and 
 html { color-scheme: dark; }
 
 // Links. Minima darkens visited links, which is unreadable on a dark page.
-a:link { color: $link-color; text-decoration: none; }
-a:visited { color: $visited-link-color; }
-a:hover { color: $highlight-color; text-decoration: underline; }
+a:link { color: #beaaf0; text-decoration: none; }
+a:visited { color: #aab9f0; }
+a:hover { color: #f0beaa; text-decoration: underline; }
 
 // Code and tab output blocks (the skeleton results).
 pre, code {
   background-color: #004A41;
-  color: $text-color;
-  border-color: $grey-color-light;
+  color: #aaf0be;
+  border-color: #b9f0aa;
 }
 pre > code { background-color: transparent; }
 
 // Buttons, selects and text boxes on the Skeletons page.
 select, input[type="text"], button {
-  background-color: $hero-color;
-  color: $background-color;
-  border: 1px solid $grey-color;
+  background-color: #aaf0be;
+  color: #00665A;
+  border: 1px solid #7fe89d;
   border-radius: 3px;
   padding: 0.2rem 0.5rem;
   font: inherit;
 }
-button:hover, select:hover { border-color: $text-color; }
+button:hover, select:hover { border-color: #aaf0be; }
