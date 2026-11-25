@@ -13,8 +13,8 @@ plugins:
 # The pages listed in the header, in this order.
 header_pages:
   - about.md
-  - skeletons.html
   - music.html
+  - skeletons.html
 
 exclude:
   - README.md

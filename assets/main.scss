@@ -24,12 +24,15 @@
 
 
 // The variables minima actually reads.
-$background-color: #00665A;             // page background
-$text-color: #b9f0aa;                 // main text
-$brand-color: #aaf0be;                // minima uses this for links (and main title)
-$grey-color: #aaf0e1;                 // muted text (dates, footer)
-$grey-color-light: #003f66;           // lines under the header, above the footer, table and code borders
-$grey-color-dark: #aaf0be;            // site title and headings in the header and footer
+$background-color: #00665A;             // Page background
+$text-color: #b9f0aa;                 // Main body text, and the header navigation links.
+$brand-color: #aaf0be;                // Link colour. Also the base for visited links, which
+//                                         minima darkens by 15%.
+$grey-color: #b9f0aa;                 // Muted text: post dates, quote text, small print.
+$grey-color-light: #beaaf0;           // Thin lines and borders: under the header, above the
+//                                         footer, beside quotes, round code blocks and tables.
+$grey-color-dark: #aaf0be;            // The site title, footer headings, and the thick bar at
+//                                         the very top of the page.
 
 @import "minima";
 
@@ -38,8 +41,8 @@ html { color-scheme: dark; }
 
 // Links. Minima darkens visited links, which is unreadable on a dark page.
 a:link { color: $brand-color; text-decoration: none; }
-a:visited { color: #aaf0e1; }
-a:hover { color: #003f66; text-decoration: underline; }
+a:visited { color: #b9f0aa; }
+a:hover { color: #beaaf0; text-decoration: underline; }
 
 // Code and tab output blocks (the skeleton results).
 pre, code {

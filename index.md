@@ -2,4 +2,4 @@
 layout: home
 ---
 
-Autistic music things and so much more (nothing more).
+autistic music things and so much more (nothing more).
