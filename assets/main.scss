@@ -18,7 +18,7 @@ $brand-tetradic-3: #f0e1aa;          // brand tetradic 3
 html { color-scheme: dark; }
 
 // Links: visited links must not darken on a dark background.
-a:link { color: $link-color; text-decoration: none; }
+a:link { text-decoration: none; }
 a:visited { color: $visited-link-color; }
 a:hover { color: $highlight-color; }
 
